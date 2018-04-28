@@ -11,7 +11,7 @@ extract(path.resolve(args[0]),{splitPages: true}, (err, text) => {
     return;
   } else {
     const data = stringListToText(text);
-    fs.writeFileSync("output.txt",data,"utf8");
+    fs.writeFileSync(`${args[1]}.txt`,data,"utf8");
   }
 })
 
